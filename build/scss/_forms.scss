@@ -107,7 +107,8 @@
 }
 
 label:not(.form-check-label):not(.custom-file-label) {
-  font-weight: $font-weight-bold;
+  // font-weight: $font-weight-bold; Rahul Override
+  font-weight: $font-weight-normal;
 }
 
 .warning-feedback {

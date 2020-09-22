@@ -65,7 +65,7 @@
 }
 
 label:not(.form-check-label):not(.custom-file-label) {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .warning-feedback {
