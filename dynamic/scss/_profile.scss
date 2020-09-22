@@ -1,0 +1,65 @@
+
+
+.card {
+    &.user-profile-card {
+        text-align: center;
+
+        .user-profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin: 1rem auto 1.5rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+            display: block;
+        }
+        .profile-username {
+            color: $primary;
+            margin-bottom: 0.25rem;
+        }
+        .qualification {
+            color: #888;
+        }
+        .address {
+            color: #555;
+            width: 75%;
+            margin: 1rem auto 1rem;
+        }
+    }
+}
+
+.main-profile-wrap {
+    .block-title {
+        h3 {
+            font-size: 20px;
+            display: inline-block;
+            border-bottom: 1px solid #eee;
+            color: $primary;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.25rem;
+        }
+    }
+
+    .left-side {
+        .card {
+            &:nth-child(2) {
+                .nav-link {
+                    padding: 0.75rem 1rem;
+                }
+            }
+        }
+    }
+
+    .right-side {
+        table {
+            tbody {
+                tr {
+                    &:first-child {
+                        td {
+                            border-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

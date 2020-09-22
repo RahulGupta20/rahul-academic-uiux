@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AcademyErp | Dashboard </title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="dynamic/css/main.css">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed dashboard">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-dark navbar-success border-success">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <!-- <li class="nav-item d-none d-sm-inline-block">
+          <a href="index3.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">Contact</a>
+        </li> -->
+      </ul>
+
+      <!-- SEARCH FORM -->
+      <form class="form-inline ml-3">
+        <div class="input-group input-group-sm">
+          <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-navbar" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Messages Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-comments"></i>
+            <span class="badge badge-danger navbar-badge">3</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Brad Diesel
+                    <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">Call me whenever you can...</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    John Pierce
+                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">I got your message bro</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Nora Silvester
+                    <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">The subject goes here</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+          </div>
+        </li>
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-item dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> 4 new messages
+              <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> 8 friend requests
+              <span class="float-right text-muted text-sm">12 hours</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-file mr-2"></i> 3 new reports
+              <span class="float-right text-muted text-sm">2 days</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+            <i class="fas fa-expand-arrows-alt"></i>
+          </a>
+        </li>
+        <li class="nav-item d-none">
+          <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+            <i class="fas fa-th-large"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+  <aside class="main-sidebar elevation-4 sidebar-light-success">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="dynamic/images/logo.png" alt="Dynamic Academy Logo" class="brand-image">
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/billgates1.png" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Arjun Adhikari</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column nav-flat" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+			   with font-awesome or any other icon font library -->
+			<li class="nav-item">
+				<a href="#" class="nav-link active">
+					<i class="nav-icon fas fa-tachometer-alt"></i>
+					<p>
+						Dashboard
+					</p>
+				</a>
+			</li>
+			<!-- <li class="nav-item menu-open">
+				<a href="#" class="nav-link ">
+				<i class="nav-icon fas fa-tachometer-alt"></i>
+				<p>
+					Dashboard
+					<i class="right fas fa-angle-left"></i>
+				</p>
+				</a>
+				<ul class="nav nav-treeview">
+				<li class="nav-item">
+					<a href="./index.html" class="nav-link">
+					<i class="fas fa-long-arrow-alt-right nav-icon"></i>
+					<p>Dashboard v1</p>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="./index2.html" class="nav-link active">
+					<i class="far fa-circle nav-icon"></i>
+					<p>Dashboard v2</p>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="./index3.html" class="nav-link">
+					<i class="far fa-circle nav-icon"></i>
+					<p>Dashboard v3</p>
+					</a>
+				</li>
+				</ul>
+			</li> -->
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<i class="nav-icon far fa-user"></i>
+					<p>
+						Profile
+					</p>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<i class="nav-icon fas fa-exclamation-triangle"></i>
+					<p>
+						Online class
+					</p>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<i class="nav-icon fas fa-exclamation-triangle"></i>
+					<p>
+						Notice
+					</p>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<i class="nav-icon fas fa-exclamation-triangle"></i>
+					<p>
+						Make student Attendance
+					</p>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<i class="nav-icon fas fa-exclamation-triangle"></i>
+					<p>
+						Lesson Plan 
+					</p>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<i class="nav-icon fas fa-exclamation-triangle"></i>
+					<p>
+						Homework Reports
+					</p>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<i class="nav-icon fas fa-exclamation-triangle"></i>
+					<p>
+						Class Schedule
+					</p>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<i class="nav-icon fas fa-exclamation-triangle"></i>
+					<p>
+						Class Wise Student List
+					</p>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<i class="nav-icon fas fa-exclamation-triangle"></i>
+					<p>
+						Create Emergency Class schedule
+					</p>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<i class="nav-icon fas fa-exclamation-triangle"></i>
+					<p>
+						Exam schedule
+					</p>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<i class="nav-icon fas fa-exclamation-triangle"></i>
+					<p>
+						Mark Entry
+					</p>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<i class="nav-icon fas fa-exclamation-triangle"></i>
+					<p>
+						Exam Attendance
+					</p>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<i class="nav-icon fas fa-exclamation-triangle"></i>
+					<p>
+						Result summary
+					</p>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<i class="nav-icon fas fa-exclamation-triangle"></i>
+					<p>
+						E-Library
+					</p>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<i class="nav-icon fas fa-exclamation-triangle"></i>
+					<p>
+						Calendar
+					</p>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<i class="nav-icon fas fa-exclamation-triangle"></i>
+					<p>
+						Parent chatting
+					</p>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<i class="nav-icon fas fa-exclamation-triangle"></i>
+					<p>
+						Complain
+					</p>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<i class="nav-icon fas fa-exclamation-triangle"></i>
+					<p>
+						Teacher personal Grievance
+					</p>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<i class="nav-icon fas fa-exclamation-triangle"></i>
+					<p>
+						Online Exam
+					</p>
+				</a>
+			</li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header cstm-bg-top">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0 text-capitalized">Profile</h1>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content-header -->
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+        <div class="main-profile-wrap">
+          <!-- Info boxes -->
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 left-side">
+              <div class="card user-profile-card">
+				  <div class="card-body">
+					  	<img src="dist/img/billgates1.png" class="user-profile-img" alt="image">
+						<h3 class="profile-username">Dr. Arjun Adhikari</h3>
+						<span class="qualification">Science Teacher</span>
+						<div class="address">
+							795 Folsom Ave, Suite 600 San Francisco, CADGE 94107
+						</div>
+						<ul class="social-icons-ql">
+							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="far fa-envelope"></i></a></li>
+						</ul>
+					</div>
+			  </div>
+			  <!-- /.card -->
+			  <div class="card text-white bg-info">
+				  <div class="card-body p-0">
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<span class="nav-link">
+								Staff ID <span class="float-right">322</span>
+							</span>
+						</li>
+						<li class="nav-item">
+							<span class="nav-link">
+								Category <span class="float-right">Primary</span>
+							</span>
+						</li>
+						<li class="nav-item">
+							<span class="nav-link">
+								Date Of Joining <span class="float-right">20 Jan, 2016</span>
+							</span>
+						</li>
+					  </ul>
+				  </div>
+			  </div>
+
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+
+            <div class="col-12 col-sm-6 col-md-8 right-side">
+              <div class="card">
+                <div class="card-body px-lg-5 pt-lg-4">
+					<div class="mb-4">
+						<header class="block-title">
+							<h3>About</h3>
+						</header>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iusto obcaecati earum quas, modi repellendus ducimus provident praesentium officiis vel possimus tempora ullam, dolore facilis voluptate distinctio porro laborum veniam.</p>
+					</div>
+					<div class="mb-4">
+						<header class="block-title">
+							<h3>Personal Info</h3>
+						</header>
+						<table class="table">
+							<tbody>
+								<tr>
+									<td>Email</td>
+									<td>arjun@gmail.com</td>
+								</tr>
+								<tr>
+									<td>Contact Number</td>
+									<td>9815234849</td>
+								</tr>
+								<tr>
+									<td>Date Of Birth</td>
+									<td>25/06/2053</td>
+								</tr>
+								<tr>
+									<td>BloodGroup</td>
+									<td>A+</td>
+								</tr>
+								<tr>
+									<td>Nationality</td>
+									<td>Nepali</td>
+								</tr>
+								<tr>
+									<td>Religion</td>
+									<td>Hinduism</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="mb-4">
+						<header class="block-title">
+							<h3>Personal Info</h3>
+						</header>
+						<table class="table">
+							<tbody>
+								<tr>
+									<td>Current Address</td>
+									<td>Shreepur Birgunj, Parsa</td>
+								</tr>
+								<tr>
+									<td>Contact Number</td>
+									<td>9815234849</td>
+								</tr>
+								<tr>
+									<td>Date Of Birth</td>
+									<td>25/06/2053</td>
+								</tr>
+								<tr>
+									<td>BloodGroup</td>
+									<td>A+</td>
+								</tr>
+								<tr>
+									<td>Nationality</td>
+									<td>Nepali</td>
+								</tr>
+								<tr>
+									<td>Religion</td>
+									<td>Hinduism</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!-- /.card -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+          </div>
+		  <!-- /.row -->
+		</div>
+		<!-- /.main profile wrap  -->
+		<!-- end co-workers -->
+        </div>
+        <!--/. container-fluid -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+		<strong>Copyright &copy; 2020 <a href="#">Dynamic Technosoft Pvt. Ltd.</a></strong>
+		All rights reserved.
+		<div class="float-right d-none d-sm-inline-block">
+		  <b>Version</b> 3.1.0-pre
+		</div>
+	  </footer>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- REQUIRED SCRIPTS -->
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script> 
+  <!-- Sparkline -->
+	<script src="plugins/sparklines/sparkline.js"></script>
+	<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+  <!-- overlayScrollbars -->
+  <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.js"></script>
+
+  <!-- PAGE PLUGINS -->
+  <!-- jQuery Mapael -->
+  <script src="plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
+  <script src="plugins/raphael/raphael.min.js"></script>
+  <script src="plugins/jquery-mapael/jquery.mapael.min.js"></script>
+  <script src="plugins/jquery-mapael/maps/usa_states.min.js"></script>
+  <!-- date-range-picker -->
+  <script src="plugins/moment/moment.min.js"></script>
+  <script src="plugins/daterangepicker/daterangepicker.js"></script>
+  <!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+  <!-- ChartJS -->
+  <script src="plugins/chart.js/Chart.min.js"></script>
+  <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="dist/js/demo.js"></script>
+  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+  <!-- <script src="dist/js/pages/dashboard2.js"></script> -->
+  <script src="dist/js/pages/dashboard.js"></script>
+  <script src="dynamic/js/main.js"></script>
+  
+
+  <script type="text/javascript">
+    $(function () {
+
+      var start = moment().subtract();
+      var end = moment();
+
+      function cb(start) {
+        $('#reportrange span').html(start.format('MMMM D, YYYY'));
+      }
+
+      $('#reportrange').daterangepicker({
+        startDate: start,
+        endDate: end,
+        ranges: {
+          'Today': [moment()],
+          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+      }, cb);
+
+      cb(start, end);
+
+    });
+
+  </script>
+  <script>
+	$(function () {
+	  /* jQueryKnob */
+  
+	  $('.knob').knob({
+		/*change : function (value) {
+		 //console.log("change : " + value);
+		 },
+		 release : function (value) {
+		 console.log("release : " + value);
+		 },
+		 cancel : function () {
+		 console.log("cancel : " + this.value);
+		 },*/
+		
+	  })
+	  /* END JQUERY KNOB */
+  
+  
+	})
+  
+  </script>
+  <script>
+	$(function () {
+	  //-------------
+	  //- DONUT CHART -
+	  //-------------
+	  // Get context with jQuery - using jQuery's .get() method.
+	  var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
+	  var donutData        = {
+		labels: [
+			'Present',
+			'Absent',
+			'Late',
+			'Leave',
+		],
+		datasets: [
+		  {
+			data: [700,500,400,600],
+			backgroundColor : ['#538537', '#B0BE4E', '#7B8537', '#4EBE72'],
+			borderWidth: 0
+
+		  }
+		]
+	  }
+	  var donutOptions     = {
+		maintainAspectRatio : false,
+		responsive : true,
+	  }
+	  
+	  //Create pie or douhnut chart
+	  // You can switch between pie and douhnut using the method below.
+	  var donutChart = new Chart(donutChartCanvas, {
+		type: 'doughnut',
+		data: donutData,
+		options: donutOptions,
+		options: {
+			legend: {
+				display: false,
+				labels: {
+					fontSize: 14,
+					boxWidth: 15,
+				},
+				position: 'bottom',
+				align: 'start',
+				padding: 40
+			},
+			
+		},
+		
+	  })
+  
+	})
+  </script>
+  <script>
+	$(function () {
+	  //-------------
+	  //- DONUT CHART -
+	  //-------------
+	  // Get context with jQuery - using jQuery's .get() method.
+	  var donutChartCanvas = $('#donutChartClassSeven').get(0).getContext('2d')
+	  var donutData        = {
+		labels: [
+			'Present',
+			'Absent',
+			'Late',
+			'Leave',
+		],
+		datasets: [
+		  {
+			data: [200,300,400,250],
+			backgroundColor : ['#538537', '#B0BE4E', '#7B8537', '#4EBE72'],
+			borderWidth: 0
+
+		  }
+		]
+	  }
+	  var donutOptions     = {
+		maintainAspectRatio : false,
+		responsive : true,
+	  }
+	  
+	  //Create pie or douhnut chart
+	  // You can switch between pie and douhnut using the method below.
+	  var donutChart = new Chart(donutChartCanvas, {
+		type: 'doughnut',
+		data: donutData,
+		options: donutOptions,
+		options: {
+			legend: {
+				display: false,
+				labels: {
+					fontSize: 14,
+					boxWidth: 15,
+				},
+				position: 'bottom',
+				align: 'start',
+				padding: 40
+			},
+			
+		},
+		
+	  })
+  
+	})
+  </script>
+  <script>
+	$(function () {
+	  //-------------
+	  //- DONUT CHART -
+	  //-------------
+	  // Get context with jQuery - using jQuery's .get() method.
+	  var donutChartCanvas = $('#donutChartClassEight').get(0).getContext('2d')
+	  var donutData        = {
+		labels: [
+			'Present',
+			'Absent',
+			'Late',
+			'Leave',
+		],
+		datasets: [
+		  {
+			data: [400,500,100,200],
+			backgroundColor : ['#538537', '#B0BE4E', '#7B8537', '#4EBE72'],
+			borderWidth: 0
+
+		  }
+		]
+	  }
+	  var donutOptions     = {
+		maintainAspectRatio : false,
+		responsive : true,
+	  }
+	  
+	  //Create pie or douhnut chart
+	  // You can switch between pie and douhnut using the method below.
+	  var donutChart = new Chart(donutChartCanvas, {
+		type: 'doughnut',
+		data: donutData,
+		options: donutOptions,
+		options: {
+			legend: {
+				display: false,
+				labels: {
+					fontSize: 14,
+					boxWidth: 15,
+				},
+				position: 'bottom',
+				align: 'start',
+				padding: 40
+			},
+			
+		},
+		
+	  })
+  
+	})
+  </script>
+  <script>
+	$(function () {
+	  //-------------
+	  //- DONUT CHART -
+	  //-------------
+	  // Get context with jQuery - using jQuery's .get() method.
+	  var donutChartCanvas = $('#donutChartClassNine').get(0).getContext('2d')
+	  var donutData        = {
+		labels: [
+			'Present',
+			'Absent',
+			'Late',
+			'Leave',
+		],
+		datasets: [
+		  {
+			data: [100,500,200,400],
+			backgroundColor : ['#538537', '#B0BE4E', '#7B8537', '#4EBE72'],
+			borderWidth: 0
+
+		  }
+		]
+	  }
+	  var donutOptions     = {
+		maintainAspectRatio : false,
+		responsive : true,
+	  }
+	  
+	  //Create pie or douhnut chart
+	  // You can switch between pie and douhnut using the method below.
+	  var donutChart = new Chart(donutChartCanvas, {
+		type: 'doughnut',
+		data: donutData,
+		options: donutOptions,
+		options: {
+			legend: {
+				display: false,
+				labels: {
+					fontSize: 14,
+					boxWidth: 15,
+				},
+				position: 'bottom',
+				align: 'start',
+				padding: 40
+			},
+			
+		},
+		
+	  })
+  
+	})
+  </script>
+</body>
+
+</html>
